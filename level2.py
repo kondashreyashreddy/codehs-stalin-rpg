@@ -1,4 +1,4 @@
-# Level 2
+# =========================+ Level 2 +========================= #
 def level2_background():
     l2bg_r1 = Rectangle(get_width(),get_height())
     l2bg_r1.set_position(0,0)
@@ -2355,25 +2355,3 @@ def level2_pellet3():
     l2p3_circ1.set_position(HW+14,get_height()-11.5)
     l2p3_circ1.set_color(Color.yellow)
     add(l2p3_circ1)
-    
-def level2_count1():
-    l2c1_txt1 = Text("1")
-    l2c1_txt1.set_position(HW-50,HH+70)
-    l2c1_txt1.set_color(Color.red)
-    l2c1_txt1.set_font("160pt Times New Roman")
-    add(l2c1_txt1)
-    
-def level2_count2():
-    l2c2_txt1 = Text("2")
-    l2c2_txt1.set_position(HW-50,HH+70)
-    l2c2_txt1.set_color(Color.blue)
-    l2c2_txt1.set_font("160pt Ariel")
-    add(l2c2_txt1)
-    
-def level2_count3():
-    l2c3_txt1 = Text("3")
-    l2c3_txt1.set_position(HW-50,HH+70)
-    l2c3_txt1.set_color(Color.green)
-    l2c3_txt1.set_font("160pt Ubuntu")
-    add(l2c3_txt1)
-    
