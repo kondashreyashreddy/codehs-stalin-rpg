@@ -1,1 +1,28 @@
-
+# =========================+ End +========================= #    
+def end_background():
+    ebg_r1 = Rectangle(get_width(),get_height())
+    ebg_r1.set_position(0,0)
+    ebg_r1.set_color(Color.blue)
+    add(ebg_r1)
+    if win == 0:
+        ebg_txt1a = Text("Game Over")
+        ebg_txt1a.set_position(10,60)
+        ebg_txt1a.set_color(Color.red)
+        ebg_txt1a.set_font("60pt Times New Roman")
+        add(ebg_txt1a)
+    else:
+        ebg_txt1b = Text("You Win")
+        ebg_txt1b.set_position(40,60)
+        ebg_txt1b.set_color(Color.green)
+        ebg_txt1b.set_font("60pt Times New Roman")
+        add(ebg_txt1b)
+    ebg_txt2 = Text("Your Score:")
+    ebg_txt2.set_position(130,100)
+    ebg_txt2.set_color(Color.white)
+    ebg_txt2.set_font("24pt Ariel")
+    add(ebg_txt2)
+    ebg_txt3 = Text(points)
+    ebg_txt3.set_position(160,300)
+    ebg_txt3.set_color(Color.white)
+    ebg_txt3.set_font("150pt Ariel")
+    add(ebg_txt3)
