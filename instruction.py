@@ -1,4 +1,4 @@
-# Instruction Screen
+# =========================+ Instruction Screen +========================= #
 def instruction_background():
     ibg_r1 = Rectangle(get_width(),get_height())
     ibg_r1.set_position(0,0)
@@ -48,7 +48,7 @@ def instruction_direction():
     id_txt7.set_color(Color.white)
     id_txt7.set_font("12pt Ariel")
     add(id_txt7)
-    id_txt8 = Text("- There are 3 levels you must complete to win.")
+    id_txt8 = Text("- There are 2 levels you must complete to win.")
     id_txt8.set_position(HW-185,HH+20)
     id_txt8.set_color(Color.white)
     id_txt8.set_font("12pt Ariel")
@@ -118,6 +118,7 @@ def instruction_direction():
     add(id_circ12)
     
 def instruction_continue():
+    global ic_r1
     ic_r1 = Rectangle(200,100)
     ic_r1.set_position(HW-100,HH+80)
     ic_r1.set_color(Color.black)
@@ -131,4 +132,3 @@ def instruction_continue():
     ic_txt1.set_color(Color.black)
     ic_txt1.set_font("30pt Ariel")
     add(ic_txt1)
-
