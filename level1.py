@@ -1,4 +1,4 @@
-# Level 1
+# =========================+ Level 1 +========================= #
 def level1_background():
     l1bg_r1 = Rectangle(get_width(),get_height())
     l1bg_r1.set_position(0,0)
@@ -245,6 +245,7 @@ def level1_pellet_bar():
     add(l1pb_circ6)
     
 def level1_stalin():
+    global l1s_circ1, l1s_r1, l1s_r2
     l1s_circ1 = Circle(11)
     l1s_circ1.set_position(HW,get_height()-12)
     l1s_circ1.set_color("#006400")
@@ -259,40 +260,38 @@ def level1_stalin():
     add(l1s_r2)
     
 def level1_pellet1():
+    global l1p1_circ1
     l1p1_circ1 = Circle(2)
     l1p1_circ1.set_position(HW+18.5,get_height()-16.5)
     l1p1_circ1.set_color(Color.yellow)
     add(l1p1_circ1)
     
 def level1_pellet2():
+    global l1p2_circ1
     l1p2_circ1 = Circle(2)
     l1p2_circ1.set_position(HW+18.5,get_height()-11.5)
     l1p2_circ1.set_color(Color.yellow)
     add(l1p2_circ1)
     
 def level1_pellet3():
+    global l1p3_circ1
     l1p3_circ1 = Circle(2)
     l1p3_circ1.set_position(HW+14,get_height()-11.5)
     l1p3_circ1.set_color(Color.yellow)
     add(l1p3_circ1)
     
-def level1_count1():
-    l1c1_txt1 = Text("1")
-    l1c1_txt1.set_position(HW-50,HH+70)
-    l1c1_txt1.set_color(Color.red)
-    l1c1_txt1.set_font("160pt Times New Roman")
-    add(l1c1_txt1)
-    
-def level1_count2():
-    l1c2_txt1 = Text("2")
-    l1c2_txt1.set_position(HW-50,HH+70)
-    l1c2_txt1.set_color(Color.blue)
-    l1c2_txt1.set_font("160pt Ariel")
-    add(l1c2_txt1)
-    
-def level1_count3():
-    l1c3_txt1 = Text("3")
-    l1c3_txt1.set_position(HW-50,HH+70)
-    l1c3_txt1.set_color(Color.green)
-    l1c3_txt1.set_font("160pt Ubuntu")
-    add(l1c3_txt1)
+def level1_enemy():
+    global l1en_circ1, l1e1h
+    l1en_circ1 = Circle(10)
+    l1en_circ1.set_position(random.randint(10,350),l1e1h)
+    l1en_circ1.set_color(Color.yellow)
+    add(l1en_circ1)
+
+def level1_enemy_movement():
+    global l1en_circ1, l1e1h, cp
+    l1en_circ1.move(0,4)
+    l1e1h = l1en_circ1.get_y()
+    if l1e1h == 366:
+        remove_all()
+        end_background()
+        cp = False
