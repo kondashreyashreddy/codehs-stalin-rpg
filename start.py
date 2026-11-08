@@ -1,4 +1,4 @@
-# Start Screen
+# =========================+ Start Screen +========================= #
 def start_background():
     sbg_r1 = Rectangle(get_width(),get_height())
     sbg_r1.set_position(0,0)
@@ -70,6 +70,7 @@ def start_background():
     add(sbg_r17)
 
 def start_button():
+    global sb_r1
     sb_r1 = Rectangle(200,100)
     sb_r1.set_position(HW-100,HH-50)
     sb_r1.set_color(Color.black)
@@ -90,4 +91,4 @@ def start_title():
     st_txt1.set_color(Color.black)
     st_txt1.set_font("60pt Times New Roman")
     add(st_txt1)
-    
+
