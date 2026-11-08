@@ -2284,14 +2284,19 @@ def level2_background():
     l2bg_r556.set_position(HW+177.5,HH+39)
     l2bg_r556.set_color(Color.purple)
     add(l2bg_r556)
-    
+    l2bg_r571 = Rectangle(get_width()-20,20)
+    l2bg_r571.set_color(Color.black)
+    l2bg_r571.set_position(10,HH+57)
+    add(l2bg_r571)
+    l2bg_r572 = Rectangle(get_width(),25)
+    l2bg_r572.set_position(0,get_height()-25)
+    l2bg_r572.set_color(Color.green)
+    add(l2bg_r572)
     l2bg_txt1 = Text("Level 2 - Warsaw Gardens")
     l2bg_txt1.set_position(3,19)
     l2bg_txt1.set_color(Color.white)
     l2bg_txt1.set_font("15pt Times New Roman")
     add(l2bg_txt1)
-    
-
 
 def level2_pellet_bar():
     l2pb_circ1 = Circle(9)
@@ -2318,3 +2323,57 @@ def level2_pellet_bar():
     l2pb_circ6.set_position(get_width()-11,12)
     l2pb_circ6.set_color(Color.yellow)
     add(l2pb_circ6)
+
+def level2_stalin():
+    l2s_circ1 = Circle(11)
+    l2s_circ1.set_position(HW,get_height()-12)
+    l2s_circ1.set_color("#006400")
+    add(l2s_circ1)
+    l2s_r1 = Rectangle(10,5)
+    l2s_r1.set_position(HW+10,get_height()-14)
+    l2s_r1.set_color(Color.black)
+    add(l2s_r1)
+    l2s_r2 = Rectangle(5,10)
+    l2s_r2.set_position(HW+16,get_height()-19)
+    l2s_r2.set_color(Color.black)
+    add(l2s_r2)
+    
+def level2_pellet1():
+    l2p1_circ1 = Circle(2)
+    l2p1_circ1.set_position(HW+18.5,get_height()-16.5)
+    l2p1_circ1.set_color(Color.yellow)
+    add(l2p1_circ1)
+    
+def level2_pellet2():
+    l2p2_circ1 = Circle(2)
+    l2p2_circ1.set_position(HW+18.5,get_height()-11.5)
+    l2p2_circ1.set_color(Color.yellow)
+    add(l2p2_circ1)
+    
+def level2_pellet3():
+    l2p3_circ1 = Circle(2)
+    l2p3_circ1.set_position(HW+14,get_height()-11.5)
+    l2p3_circ1.set_color(Color.yellow)
+    add(l2p3_circ1)
+    
+def level2_count1():
+    l2c1_txt1 = Text("1")
+    l2c1_txt1.set_position(HW-50,HH+70)
+    l2c1_txt1.set_color(Color.red)
+    l2c1_txt1.set_font("160pt Times New Roman")
+    add(l2c1_txt1)
+    
+def level2_count2():
+    l2c2_txt1 = Text("2")
+    l2c2_txt1.set_position(HW-50,HH+70)
+    l2c2_txt1.set_color(Color.blue)
+    l2c2_txt1.set_font("160pt Ariel")
+    add(l2c2_txt1)
+    
+def level2_count3():
+    l2c3_txt1 = Text("3")
+    l2c3_txt1.set_position(HW-50,HH+70)
+    l2c3_txt1.set_color(Color.green)
+    l2c3_txt1.set_font("160pt Ubuntu")
+    add(l2c3_txt1)
+    
